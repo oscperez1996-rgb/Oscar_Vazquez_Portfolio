@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Oscar Vazquez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="monogram" href="index.html">
+        <span class="mark">OV</span>
+        <span class="name">Oscar Vazquez</span>
+      </a>
+      <nav class="site-nav">
+        <a href="index.html#work">Work</a>
+        <!-- aria-current marks the page you're on; the CSS underlines it -->
+        <a href="about.html" aria-current="page">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Title and intro on the left, photo on the right, so the photo shows up first -->
+    <section class="about-hero wrap">
+      <div class="about-intro">
+        <p class="label red">About</p>
+        <h1>Engineer and <em>community oriented</em></h1>
+        <p class="lede">
+          Apart from being a mechanical engineering student at Harvard, 
+          I am a musician, a soccer player, and a board member of SHPE, 
+          where I work to make engineering more accessible to students 
+          from underrepresented backgrounds.
+        </p>
+      </div>
+      <div class="sheet about-photo">
+        <span class="zone" style="top:4px;left:25%">2</span>
+        <span class="zone" style="top:4px;left:75%">1</span>
+        <span class="zone" style="left:3px;top:30%">B</span>
+        <span class="zone" style="left:3px;top:75%">A</span>
+        <img src="assets/about-oscar.jpg" alt="Oscar Vazquez smiling outdoors in a cream quarter-zip, with a river and bare trees behind him" width="1050" height="1400">
+      </div>
+    </section>
+
+    <section class="about-grid wrap">
+      <div class="prose">
+        <div><a class="btn" href="index.html#work">See my projects →</a></div>
+      </div>
+    </section>
+
+    <!-- Personal side -->
+    <section class="section wrap">
+      <div class="section-head">
+        <p class="label">Off the clock</p>
+        <h2>How I spend the rest of my time.</h2>
+      </div>
+      <!-- Each .life block is one activity: photos on one side, words on the other -->
+      <div class="life">
+        <figure class="life-main"><img src="assets/about-mariachi-portrait.jpg" alt="Oscar in a crimson Harvard mariachi traje holding a guitar, next to a bandmate holding a violin" loading="lazy"></figure>
+        <div class="life-text">
+          <p class="label red">Music</p>
+          <h3>Harvard Undergraduate Mariachi</h3>
+          <p>Playing with Harvard's mariachi ensemble is how I keep my Mexican roots close at school.
+             We perform across campus, including the annual Harvard x Yale concert, and alongside
+             folklórico dancers.</p>
+          <div class="life-pics">
+            <figure><img src="assets/about-mariachi-concert.jpg" alt="The mariachi ensemble performing at the annual Harvard x Yale concert" loading="lazy"><figcaption>Harvard x Yale concert.</figcaption></figure>
+            <figure><img src="assets/about-mariachi-ensemble.jpg" alt="The mariachi ensemble with folklórico dancers in colorful skirts" loading="lazy"><figcaption>With the folklórico dancers.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="life flip">
+        <figure class="life-main"><img src="assets/about-shpe.jpg" alt="SHPE members standing in front of the SHPE Harvard booth outdoors" loading="lazy"></figure>
+        <div class="life-text">
+          <p class="label red">Leadership</p>
+          <h3>SHPE Board</h3>
+          <p>As a board member of Harvard's chapter of the Society of Hispanic Professional
+             Engineers, I help build the support and access that lets more students see themselves
+             in engineering.</p>
+        </div>
+      </div>
+
+      <div class="life">
+        <figure class="life-main"><img src="assets/about-soccer-action.jpg" alt="Soccer player in a maroon number 14 jersey dribbling past a defender at night" loading="lazy"></figure>
+        <div class="life-text">
+          <p class="label red">Sport</p>
+          <h3>Soccer</h3>
+          <p>Soccer is the game I grew up on, and it taught me a lot of what I bring to a team:
+             communication, discipline, and playing your role so the whole side works.</p>
+          <div class="life-pics one">
+            <figure><img src="assets/about-soccer-team.jpg" alt="Soccer team in maroon jerseys posing under a balloon arch" loading="lazy"><figcaption>With the team.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+    <!-- What I bring -->
+    <section class="section wrap" style="padding-top:0">
+      <div class="section-head">
+        <p class="label">What I bring</p>
+        <h2>Hands-on, and team oriented.</h2>
+      </div>
+      <div class="values">
+        <div>
+          <p class="label red">Build literacy</p>
+          <h3>Design for the shop floor</h3>
+          <p>Manufacturing limits are design information. I'd rather find them early in CAD than late at the lathe.</p>
+        </div>
+        <div>
+          <p class="label red">Team energy</p>
+          <h3>Clear ownership</h3>
+          <p>I care about who owns what, communicating often, and making sure a good idea survives a busy week.</p>
+        </div>
+        <div>
+          <p class="label red">Give it back</p>
+          <h3>Widen the room</h3>
+          <p>Engineering means the most to me when it grows who gets to take part and who benefits.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolkit -->
+    <section class="section wrap" style="padding-top:0">
+      <div class="section-head">
+        <p class="label">Toolkit</p>
+        <h2>Tools I've used on real parts.</h2>
+      </div>
+      <!-- <dl> is a "description list": pairs of terms (dt) and details (dd) -->
+      <dl class="toolkit">
+        <div><dt>SolidWorks</dt><dd>Parts · assemblies · drawings</dd></div>
+        <div><dt>Manual lathe</dt><dd>Shafts · drivetrain parts</dd></div>
+        <div><dt>CNC machining</dt><dd>Plates · supports</dd></div>
+        <div><dt>Silicone molding</dt><dd>Wheels · gripper pads</dd></div>
+        <div><dt>Woodworking</dt><dd>Plywood hull build</dd></div>
+        <div><dt>Prototyping</dt><dd>Cardboard mockups · sketches</dd></div>
+      </dl>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap label">
+      <span>© 2026 Oscar Vazquez</span>
+      <a href="mailto:oscarvazquez@college.harvard.edu">oscarvazquez@college.harvard.edu</a>
+    </div>
+  </footer>
+
+</body>
+</html>

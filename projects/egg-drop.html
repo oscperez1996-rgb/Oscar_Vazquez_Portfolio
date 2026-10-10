@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Egg Drop Suspension — Oscar Vazquez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="monogram" href="../index.html">
+        <span class="mark">OV</span>
+        <span class="name">Oscar Vazquez</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <p class="crumbs label"><a href="../index.html#work">← All work</a> &nbsp;/&nbsp; Project 03</p>
+
+    <section class="project-hero">
+      <p class="label red">ES 125 Mechanical Systems · Fall 2025</p>
+      <h1>Egg Drop <em>Suspension</em></h1>
+      <p class="subtitle">A two-layer suspension of twelve spring-dampers, angled like lander legs, designed to protect a raw egg in drops of up to 20 feet.</p>
+    </section>
+
+    <figure class="hero-image on-paper">
+      <img src="../assets/egg-cad-render.png" alt="SolidWorks render of the two-layer suspension: a top team plate, a middle plate and a base plate joined by angled and straight shocks" width="1000" height="780">
+      <figcaption><b>FIG. 1</b>My SolidWorks assembly of the final design.</figcaption>
+    </figure>
+
+    <div class="facts">
+      <div><span class="label">Team</span><b>Egg Gang · three students</b></div>
+      <div><span class="label">My role</span><b>CAD lead · team design report</b></div>
+      <div><span class="label">Tools</span><b>SolidWorks · Fusion 360 · plywood · ¼-20 hardware</b></div>
+    </div>
+
+    <!-- 01 -->
+    <section class="case">
+      <p class="label">01 / The brief</p>
+      <div class="case-body">
+        <h2>Land the egg, lightly and low.</h2>
+        <p>An egg rides in a carriage that falls down vertical rails, and the suspension we
+           designed hangs underneath it as landing gear. A wireless sensor records the peak
+           acceleration on impact. The score rewards a higher drop, a lower peak acceleration,
+           and a lighter, shorter device, and it's zero if the egg cracks.</p>
+        <p>Everyone got the same kit: 12 RC-car shocks, a spring set, three silicone oil weights,
+           a few sheets of plywood and ¼-20 hardware. Each device got up to three drops with no
+           repairs in between, so it had to survive every landing.</p>
+        <div class="rules">
+          <div><strong>12</strong><span>Shocks, one spring each</span></div>
+          <div><strong>~1.3"</strong><span>Shock travel</span></div>
+          <div><strong>5–20 ft</strong><span>Allowed drop height</span></div>
+          <div><strong>48"</strong><span>Maximum device height</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="case">
+      <p class="label">02 / The idea</p>
+      <div class="case-body">
+        <h2>Borrowed from a moon lander.</h2>
+        <p>Each shock only travels about 1.3 inches, so we needed more stopping distance than one
+           layer could give. We stacked two layers of six shocks each. In every layer, four shocks
+           sit at 30° and two point straight up. On impact the straight shocks compress, while the
+           angled ones swing outward like a lander's legs, which spreads the landing over a longer
+           time. Rubber bands across the angled legs keep the stack from wobbling sideways.</p>
+      </div>
+    </section>
+    <div class="gallery two">
+      <figure class="on-paper"><img src="../assets/egg-spring-layout-sketch.jpg" alt="Hand sketch of the spring layout with the effective stiffness derivation" loading="lazy"><figcaption><b>FIG. 2</b>Spring layout sketch: 8 angled and 4 straight springs.</figcaption></figure>
+      <figure class="on-paper"><img src="../assets/egg-damped-response.png" alt="Plot of the predicted damped displacement response over time" loading="lazy"><figcaption><b>FIG. 3</b>Predicted damped response x(t). It settles without bouncing.</figcaption></figure>
+    </div>
+
+    <!-- 03 -->
+    <section class="case">
+      <p class="label">03 / The analysis</p>
+      <div class="case-body">
+        <h2>One effective spring, one effective damper.</h2>
+        <p>The brief asked for the device's stiffness and damping as a single unit. An angled
+           shock only resists vertical motion with part of its stiffness, which scales with
+           sin²θ. Adding up the eight angled and four straight shocks gave an effective stiffness
+           of about ten single springs.</p>
+        <p>With k<sub>eff</sub> = 4370 N/m, c<sub>eff</sub> = 480 N·s/m and a 2.14 kg device, the
+           natural frequency is 45.2 rad/s and the damping ratio is about 2.5. The system is
+           overdamped on purpose: it soaks up the impact without rebounding and hitting the egg a
+           second time.</p>
+        <div class="specs">
+          <div><strong>4370</strong><span>k_eff (N/m)</span></div>
+          <div><strong>480</strong><span>c_eff (N·s/m)</span></div>
+          <div><strong>ζ ≈ 2.5</strong><span>Overdamped</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="gallery two">
+      <figure class="on-paper"><img src="../assets/egg-keff-equations.png" alt="Equations for the effective stiffness and damping of angled springs" loading="lazy" style="max-height:260px;margin-inline:auto;object-fit:contain"><figcaption><b>FIG. 4</b>Projecting the angled springs onto the vertical axis.</figcaption></figure>
+      <figure class="on-paper"><img src="../assets/egg-damping-calc.jpg" alt="Handwritten calculation of natural frequency and damping ratio showing the system is overdamped" loading="lazy"><figcaption><b>FIG. 5</b>Natural frequency and damping ratio, worked by hand.</figcaption></figure>
+    </div>
+
+    <!-- 04 -->
+    <section class="case">
+      <p class="label">04 / CAD</p>
+      <div class="case-body">
+        <h2>Custom joints for angled shocks.</h2>
+        <p>Angling the shocks took mounts that weren't in the kit. I modeled the full assembly in
+           SolidWorks, and we designed slanted attachments and connectors in Fusion 360 so the
+           shocks could sit at 30° and pivot outward on impact.</p>
+      </div>
+    </section>
+    <div class="gallery two">
+      <figure class="on-paper"><img src="../assets/egg-slant-attachment.png" alt="CAD of the slanted shock attachment bracket" loading="lazy"><figcaption><b>FIG. 6</b>Slant attachment that sets the 30° shock angle.</figcaption></figure>
+      <figure class="on-paper"><img src="../assets/egg-connector.png" alt="CAD of the custom shock connector" loading="lazy"><figcaption><b>FIG. 7</b>Custom connector for the middle plate.</figcaption></figure>
+    </div>
+
+    <!-- 05 -->
+    <section class="case">
+      <p class="label">05 / The build</p>
+      <div class="case-body">
+        <h2>From model to makerspace.</h2>
+        <p>We built two plywood layers with the shocks bolted between them. The finished device weighed 2.14 kg.</p>
+      </div>
+    </section>
+    <div class="gallery four">
+      <figure><img src="../assets/egg-build-bottom.jpg" alt="Bottom layer with angled shocks bolted to the base plate" loading="lazy"><figcaption><b>FIG. 8</b>Bottom layer.</figcaption></figure>
+      <figure><img src="../assets/egg-build-midlayer.jpg" alt="Middle layer with shocks and rubber bands" loading="lazy"><figcaption><b>FIG. 9</b>Adding the middle layer.</figcaption></figure>
+      <figure><img src="../assets/egg-build-fitting.jpg" alt="Hands adjusting shocks between the plates" loading="lazy"><figcaption><b>FIG. 10</b>Fitting the angled legs.</figcaption></figure>
+      <figure><img src="../assets/egg-build-assembled.jpg" alt="The assembled two-layer suspension" loading="lazy"><figcaption><b>FIG. 11</b>Fully assembled.</figcaption></figure>
+    </div>
+    <div class="gallery">
+      <figure><img src="../assets/egg-team-final.jpg" alt="Three team members holding the finished suspension in the lab" loading="lazy" style="width:100%;max-height:620px;object-fit:cover"><figcaption><b>FIG. 12</b>Egg Gang with the finished device.</figcaption></figure>
+    </div>
+
+    <!-- 06 -->
+    <section class="case">
+      <p class="label">06 / What I owned</p>
+      <div class="case-body">
+        <h2>The model the team built from.</h2>
+        <ul class="owned">
+          <li><b>CAD</b><span>Modeled the full suspension assembly in SolidWorks, including the plates, shock layout and angled mounts.</span></li>
+          <li><b>Report</b><span>Wrote the pre-competition design report: design reasoning, team roles and the build timeline.</span></li>
+          <li><b>Team</b><span>Jacob Gokongwei led machining and Mansour Doumbia led the presentation. We all pitched in on the build and testing.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <a class="next" href="fea.html">
+      <div><span class="label">Next project</span><b>Simulation &amp; FEA</b></div>
+      <span class="arrow">→</span>
+    </a>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap label">
+      <span>© 2026 Oscar Vazquez</span>
+      <a href="../index.html">Back to home</a>
+    </div>
+  </footer>
+
+</body>
+</html>
