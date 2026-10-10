@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acrylic Truss Bridge — Oscar Vazquez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="monogram" href="../index.html">
+        <span class="mark">OV</span>
+        <span class="name">Oscar Vazquez</span>
+      </a>
+      <nav class="site-nav">
+        <a href="../index.html#work" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <p class="crumbs label"><a href="../index.html#work">← All work</a> &nbsp;/&nbsp; Project 01</p>
+
+    <section class="project-hero">
+      <p class="label red">ES 120 Bridge Competition · May 2026 · 1st place</p>
+      <h1>Acrylic <em>Truss Bridge</em></h1>
+      <p class="subtitle">A laser-cut acrylic bridge held together with interlocking tabs and slots. It won the competition on strength-to-weight ratio.</p>
+    </section>
+
+    <figure class="hero-image on-paper">
+      <img src="../assets/bridge-iso-cad.png" alt="Isometric CAD view of the acrylic truss bridge with two side trusses, a deck and cross-bracing" width="1000" height="622">
+      <figcaption><b>FIG. 1</b>Final assembly in SolidWorks.</figcaption>
+    </figure>
+
+    <div class="facts">
+      <div><span class="label">Result</span><b>1st place</b></div>
+      <div><span class="label">My role</span><b>CAD · laser cutting · build assembly</b></div>
+      <div><span class="label">Material + process</span><b>Acrylic · laser cutter · SolidWorks</b></div>
+    </div>
+
+    <!-- 01 -->
+    <section class="case">
+      <p class="label">01 / The brief</p>
+      <div class="case-body">
+        <h2>Strongest bridge per gram wins.</h2>
+        <p>Each bridge was loaded in an Instron until it broke or sagged two inches. The score
+           was the peak load divided by the bridge's own weight, so every extra gram of acrylic
+           had to earn its place.</p>
+        <p>The rules were strict. All teams got the same ME Lab materials, and parts could only
+           be made by hand or on the laser cutter. No metal fasteners were allowed, and glue
+           could only help with assembly, never carry load. A 2" × 4" space had to stay open
+           down the middle so the test car could be lowered onto the deck.</p>
+        <div class="rules">
+          <div><strong>12"</strong><span>Bridge length</span></div>
+          <div><strong>2–3.75"</strong><span>Allowed width</span></div>
+          <div><strong>8"</strong><span>Maximum height</span></div>
+          <div><strong>2 × 4"</strong><span>Clear space for the test car</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="case">
+      <p class="label">02 / The design</p>
+      <div class="case-body">
+        <h2>Triangles for strength, tabs instead of glue.</h2>
+        <p>Two side trusses carry the load. Triangular cutouts take out acrylic wherever it
+           isn't doing structural work, which keeps the weight down. A deck, beams and
+           X-braced inserts tie the trusses together across the width.</p>
+        <p>Since glue couldn't be structural, the joints had to hold on their own. Every part
+           locks into its neighbors with tabs and slots cut right into the profiles, so the
+           geometry carries the load and the glue only holds pieces in place during assembly.</p>
+      </div>
+    </section>
+    <div class="gallery two">
+      <figure class="on-paper"><img src="../assets/bridge-exploded-cad.png" alt="Exploded CAD view showing the side trusses, deck plates, beams and cross-brace inserts" loading="lazy"><figcaption><b>FIG. 2</b>Exploded view: side trusses, deck, beams and inserts.</figcaption></figure>
+      <figure class="on-paper"><img src="../assets/bridge-end-view.png" alt="End view of the bridge showing the cross-bracing and the open center channel" loading="lazy" style="max-height:420px;margin-inline:auto"><figcaption><b>FIG. 3</b>End view: cross-bracing above the deck, with the center left open for the car.</figcaption></figure>
+    </div>
+
+    <!-- 03 -->
+    <section class="case">
+      <p class="label">03 / CAD to cut file</p>
+      <div class="case-body">
+        <h2>From SolidWorks to the laser cutter.</h2>
+        <p>Once the assembly was final, we laid the flat parts out on two sheets in SolidWorks
+           and exported them as DXF files for the laser cutter. Nesting the parts tightly saved
+           acrylic. Cutting the tabs and slots in the same pass as the outlines meant every
+           joint came out lined up with the model.</p>
+      </div>
+    </section>
+    <div class="cut-sheets">
+      <figure>
+        <div class="sheet">
+          <span class="zone" style="top:4px;left:50%">12.00 in</span>
+          <span class="zone" style="left:3px;top:50%;writing-mode:vertical-rl">22.82 in</span>
+          <img src="../assets/bridge-cut-layout-25.svg" alt="Laser cut layout with two side trusses, two deck plates and two beams" loading="lazy">
+        </div>
+        <figcaption><b>SHEET 1</b>.25_layout.dxf: side trusses, deck plates and beams.</figcaption>
+      </figure>
+      <div class="side">
+        <figure>
+          <div class="sheet">
+            <span class="zone" style="top:4px;left:50%">5.86 in</span>
+            <img src="../assets/bridge-cut-layout-125.svg" alt="Laser cut layout with two top braces and four X-braced inserts" loading="lazy">
+          </div>
+          <figcaption><b>SHEET 2</b>.125_layout.dxf: top braces and X-braced inserts.</figcaption>
+        </figure>
+        <ul class="cut-key">
+          <li><b>Trusses</b><span>The two side walls, with triangular cutouts and slots for the deck and inserts.</span></li>
+          <li><b>Deck + beams</b><span>Long strips that tab into the trusses and form the driving surface.</span></li>
+          <li><b>Inserts</b><span>X-braced squares that hold the trusses square across the width.</span></li>
+          <li><b>Top braces</b><span>Tie the tops of the trusses together above the car's opening.</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <section class="case">
+      <p class="label">04 / What I owned</p>
+      <div class="case-body">
+        <h2>Most of the model, and most of the build.</h2>
+        <ul class="owned">
+          <li><b>CAD</b><span>Modeled most of the parts and the assembly in SolidWorks, including the tab-and-slot joints.</span></li>
+          <li><b>Laser cutting</b><span>Ran part of the cutting from the DXF layouts.</span></li>
+          <li><b>Build</b><span>Did most of the assembly, fitting the cut parts together into the finished bridge.</span></li>
+        </ul>
+        <p>We tested the bridge in the Instron against the rest of the class and took first place.</p>
+      </div>
+    </section>
+
+    <a class="next" href="fea.html">
+      <div><span class="label">Next project</span><b>Finite-Element Analysis</b></div>
+      <span class="arrow">→</span>
+    </a>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap label">
+      <span>© 2026 Oscar Vazquez</span>
+      <a href="../index.html">Back to home</a>
+    </div>
+  </footer>
+
+</body>
+</html>
