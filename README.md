@@ -15,4 +15,4 @@ Plain HTML + CSS, no build step. Open `index.html` in any browser.
 - Unused images ready to add: `servo-cad-1.png`, `servo-cad-2.png`.
 
 ## Free hosting
-Upload this folder to GitHub Pages or Netlify Drop (drag the folder in) to get a shareable link.
+Uploaded this folder to GitHub Pages or Netlify Drop (drag the folder in) to get a shareable link.
